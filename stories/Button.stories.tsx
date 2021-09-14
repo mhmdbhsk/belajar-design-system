@@ -55,6 +55,7 @@ const Template: Story = (args) => <Button {...args} />;
 // https://storybook.js.org/docs/react/workflows/unit-testing
 export const Solid = Template.bind({});
 export const Outlined = Template.bind({});
+export const CustomSize = Template.bind({});
 
 Solid.args = {
   color: 'purple',
@@ -65,4 +66,9 @@ Outlined.args = {
   outlined: 'true',
   color: 'gray',
   children: 'Masuk menggunkan Github',
+};
+CustomSize.args = {
+  color: 'purple',
+  children: 'Masuk menggunkan Instagram',
+  size: 'large',
 };
